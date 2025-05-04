@@ -1,5 +1,6 @@
 import { useState } from "react";
 import GithubIcon from "./components/icons/github";
+import SoundCloudIcon from "./components/icons/soundcloud";
 
 import Button from "./components/button";
 
@@ -61,17 +62,30 @@ export default function App() {
             Link Button
           </Button>
         </div>
-        <Button
-          className="bg-[#3094FF] mt-10"
-          type="a"
-          size="xl"
-          title="Github Repo"
-          href="https://github.com/designly-biz/react-tailwind-universal-button"
-          target="_blank"
-        >
-          <GithubIcon className="size-6" />
-          Github Repo
-        </Button>
+        <div className="flex justify-center items-center gap-6 mt-10">
+          <Button
+            className="bg-[#3094FF]"
+            type="a"
+            size="xl"
+            title="Github Repo"
+            href="https://github.com/designly1/react-tailwind-universal-button"
+            target="_blank"
+          >
+            <GithubIcon className="size-6" />
+            Github Repo
+          </Button>
+          <Button
+            className="bg-[#FF4400]"
+            type="a"
+            size="xl"
+            title="Follow me on SoundCloud"
+            href="https://soundcloud.com/jaysudo1/tracks"
+            target="_blank"
+          >
+            <SoundCloudIcon className="size-6" />
+            Follow me on SoundCloud
+          </Button>
+        </div>
       </main>
     </>
   );
