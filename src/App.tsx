@@ -1,4 +1,5 @@
 import { useState } from "react";
+import GithubIcon from "./components/icons/github";
 
 import Button from "./components/button";
 
@@ -60,6 +61,17 @@ export default function App() {
             Link Button
           </Button>
         </div>
+        <Button
+          className="bg-[#3094FF] mt-10"
+          type="a"
+          size="xl"
+          title="Github Repo"
+          href="https://github.com/designly-biz/react-tailwind-universal-button"
+          target="_blank"
+        >
+          <GithubIcon className="size-6" />
+          Github Repo
+        </Button>
       </main>
     </>
   );
